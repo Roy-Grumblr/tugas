@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Operator Penugasan</title>
+</head>
+<body>
+
+<h2>Hasil Operator Penugasan</h2>
+<p id="hasil"></p>
+
+<script>
+
+let teks = "";
+
+// saldo awal
+let saldo = 100000;
+teks += "Saldo awal = " + saldo + "<br>";
+
+// tambah saldo
+saldo += 50000;
+teks += "Setelah top up += 50000 = " + saldo + "<br>";
+
+// belanja
+saldo -= 30000;
+teks += "Setelah belanja -= 30000 = " + saldo + "<br>";
+
+// bonus
+saldo *= 2;
+teks += "Setelah bonus *= 2 = " + saldo + "<br>";
+
+// dibagi
+saldo /= 4;
+teks += "Setelah dibagi /= 4 = " + saldo + "<br>";
+
+// sisa pembagian
+saldo %= 3;
+teks += "Sisa saldo %= 3 = " + saldo + "<br>";
+
+// tampilkan ke halaman
+document.getElementById("hasil").innerHTML = teks;
+
+</script>
+
+</body>
+</html>
